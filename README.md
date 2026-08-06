@@ -1,13 +1,10 @@
 # Webhook Relay
 
-A deliberately small webhook delivery platform built with Kotlin, Java 21,
-Spring Boot, PostgreSQL, and Kafka-compatible transport. It demonstrates the
-hard parts of reliable webhook delivery: idempotent ingestion, a transactional
-outbox, leased worker processing, signed HTTP requests, bounded retries,
-dead-letter persistence, and replay.
-
-This is an original reference implementation. It is not presented as
-production-proven and contains no benchmark claims.
+Webhook Relay is a small delivery service I built to work through the failure
+cases behind webhooks. It uses Kotlin, Java 21, Spring Boot, PostgreSQL, and
+Kafka-compatible transport. The project covers idempotent ingestion, a
+transactional outbox, worker leases, signed HTTP requests, bounded retries,
+dead letters, and replay.
 
 ## One-command local demo
 
